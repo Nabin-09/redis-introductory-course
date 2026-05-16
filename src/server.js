@@ -11,7 +11,7 @@ app.get('/redis' , async(req , res)=>{
     res.json({message: reply});
 })
 
-app.get('/monogo' , async(req , res)=>{
+app.get('/mongo' , async(req , res)=>{
     const url = process.env.MONGO_URL || 'mongodb://localhost:27017/nabin-db'
     if(mongoose.connection.readyState == 0){
         await mongoose.connect(url);
