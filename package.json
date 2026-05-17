@@ -5,7 +5,8 @@
   "private": true,
   "scripts": {
     "dev" : "bun run src/server.js",
-    "banner" : "bun run --watch src/banner.js"
+    "banner" : "bun run --watch src/banner.js",
+    "login" : "bun run --watch src/loginTTL.js"
   },
   "dependencies": {
     "express" : "^4.18.3",
