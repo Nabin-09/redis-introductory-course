@@ -4,15 +4,17 @@
   "type": "module",
   "private": true,
   "scripts": {
-    "dev" : "bun run src/server.js",
-    "banner" : "bun run --watch src/banner.js",
-    "login" : "bun run --watch src/loginTTL.js",
-    "user" : "bun run --watch src/user-profile.js"
+    "dev": "bun run src/server.js",
+    "banner": "bun run --watch src/banner.js",
+    "login": "bun run --watch src/loginTTL.js",
+    "user": "bun run --watch src/user-profile.js",
+    "queue": "bun run --watch src/queue/order-cfm-bull.js"
   },
   "dependencies": {
-    "express" : "^4.18.3",
-    "ioredis" : "^5.4.1",
-    "mongoose" : "^8.2.1"
+    "bullmq": "^5.76.10",
+    "express": "^4.18.3",
+    "ioredis": "^5.4.1",
+    "mongoose": "^8.2.1"
   },
   "devDependencies": {
     "@types/bun": "latest"
